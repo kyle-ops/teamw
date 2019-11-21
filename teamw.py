@@ -8,10 +8,6 @@ def reminder():
   # this will help to keep track of who created each function
   return True
   
-def sailboat():
-  lkjsdfas
-  sdfljksfdjlk
-  return truela;sf
 
 
 update()
