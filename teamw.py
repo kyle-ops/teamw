@@ -52,4 +52,19 @@ def makeWindow():
         w.right(90)
     w.end_fill()
 
+def makeCloud():
+    w.fillcolor("white")
+    w.begin_fill()
+    w.setheading(0)
+    w.forward(100)
+    w.left(90)
+    for i in range(3):
+        for i in range(110):
+            w.forward(1)
+            w.left(1)
+        w.right(74.5)
+    w.setheading(0)
+    w.forward(150)
+    w.end_fill()
+    
 update()
