@@ -171,4 +171,34 @@ def drawCircle(centerX, centerY, radius, color):
         w.right(1)
     w.end_fill()
 
+def randomRed():
+    #by MatthewSharp
+    return ((randint(100, 255)), 0, 0)
+    
+
+def randomBlue():
+    #by MatthewSharp
+    return (0, 0, (randint(100, 255)))
+
+
+
+def randomGreen():
+    #by MatthewSharp
+    return (0, (randint(100, 255)), 0)
+
+
+def randomOrange():
+    #by MatthewSharp
+    return ((randint(200, 255)), 130, 0)
+
+
+def randomYellow():
+    #by MatthewSharp
+    return ((randint(210, 255)), 255, 0)
+
+
+def randomPurple():
+    #by MatthewSharp
+    return ((randint(130, 220)), 0, 255)
+
 update()
