@@ -308,4 +308,63 @@ def DrawRect(topLeftX, topLeftY, width, height, color):
   w.end_fill()
   w.penup()
 
+  def drawMountins():
+    #by MatthewSharp
+    w.penup()
+    w.goto(-100,200)
+    w.pendown()
+    w.left(45)
+    w.forward(150)
+    w.right(90)
+    w.forward(50)
+    w.left(90)
+    w.forward(40)
+    w.right(90)
+    w.forward(100)
+    w.left(120)
+    w.forward(100)
+    w.right(140)
+    w.forward(150)
+    w.left(115)
+    w.forward(150)
+    w.right(90)
+    w.forward(200)
+    w.forward(-180)
+    w.right(120)
+
+    for i in range(3):
+        w.forward(5)
+        w.left(5)
+    w.right(50)
+    for i in range(3):
+        w.forward(5)
+        w.left(5)
+    w.penup()
+    w.goto(188, 280)
+
+    w.pendown()
+    for i in range(3):
+        w.forward(6)
+        w.left(5)
+    w.right(50)
+
+    for i in range(3):
+        w.forward(6)
+        w.left(5)
+    w.penup()
+    w.goto(20,290)
+    w.pendown()
+
+    for i in range(3):
+        w.forward(6)
+        w.left(5)
+    w.right(50)
+
+    for i in range(3):
+        w.forward(2)
+        w.left(5)
+    
+    
+
+  
 update()
