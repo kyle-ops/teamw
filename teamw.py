@@ -157,5 +157,18 @@ def makeSun():
         w.left(180)
         w.forward(40)
         w.left(90)
+def drawCircle(centerX, centerY, radius, color):
+    w.penup()
+    w.goto(int(centerX), int(centerY))
+    w.setheading(0)
+    w.forward(int(radius))
+    w.right(90)
+    w.fillcolor(color)
+    w.begin_fill()
+    w.pendown()
+    for i in range(360):
+        w.forward((2 * int(radius) * pi)/360)
+        w.right(1)
+    w.end_fill()
 
 update()
