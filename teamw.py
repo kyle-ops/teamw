@@ -294,6 +294,7 @@ def windTurbine():
   w.penup()
 
 def DrawRect(topLeftX, topLeftY, width, height, color):
+  #by megan
   w.fillcolor(color)
   w.penup()
   w.goto(topLeftX, topLeftY)
