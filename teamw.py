@@ -200,5 +200,111 @@ def randomYellow():
 def randomPurple():
     #by MatthewSharp
     return ((randint(130, 220)), 0, 255)
+def starfish():
+  #by megan
+  w.penup()
+  w.goto(randint(-400,400), randint(-200,0) )
+  w.pendown()
+  w.fillcolor("orange")
+  w.begin_fill()
+  w.pendown()
+  for i in range(5):
+    w.forward(50)
+    w.right(144)
+  w.end_fill()
+  w.penup()
+
+def cresentMoon():
+    #by megan
+    w.left(180)
+    w.begin_fill()
+    w.pendown()
+    for i in range(210):
+        w.forward(1)
+        w.right(.5)
+    w.left(120)
+    for i in range(400):
+        w.forward(.95)
+        w.left(.55)
+    w.forward(12)
+    w.end_fill()
+    w.penup()
+
+def stickPerson():
+    #by megan
+    w.begin_fill()
+    w.pendown()
+    for i in range(360):
+     w.forward(.5)
+     w.left(1)
+    w.end_fill()
+#body
+    w.right(90)
+    w.forward(125)
+#right leg
+    w.left(45)
+    w.forward(87.5)
+#left leg
+    w.right(180)
+    w.forward(87.5)
+    w.left(90)
+    w.forward(87.5)
+    w.right(180)
+    w.forward(87.5)
+    w.left(45)
+    w.forward(75)
+    w.left(90)
+    w.forward(75)
+    w.left(180)
+    w.forward(150)
+
+
+def windTurbine():
+  #by megan
+  w.pendown()
+  w.fillcolor("black")
+  w.setheading(90)
+  w.forward(450)
+  w.right(90)
+  w.forward(20)
+  w.right(90)
+  w.forward(450)
+  w.right(180)
+  w.forward(425)
+  w.right(60)
+  for i in range(2):
+    w.forward(350)
+    w.right(175)
+    w.forward(400)
+  w.forward(-30)
+  w.left(90)
+  for i in range(2):
+    w.forward(350)
+    w.right(175)
+    w.forward(400)
+  w.left(135)
+  w.forward(15)
+  w.right(135)
+  w.begin_fill()
+  for i in range(360):
+    w.forward(.5)
+    w.right(1)
+  w.end_fill()
+  w.penup()
+
+def DrawRect(topLeftX, topLeftY, width, height, color):
+  w.fillcolor(color)
+  w.penup()
+  w.goto(topLeftX, topLeftY)
+  w.pendown()
+  w.setheading(0)
+  w.begin_fill()
+  for i in range(2):
+    w.forward(width)
+    w.right(90)
+    w.forward(height)
+    w.right(90)
+  w.end_fill()
+  w.penup()
 
 update()
