@@ -140,4 +140,22 @@ def makeCar():
     w.forward(50)
     w.end_fill()
 
+def makeSun():
+    #by Dominick
+    w.fillcolor("yellow")
+    w.begin_fill()
+    for i in range(360):
+        w.right(1)
+        w.forward(1)
+    w.end_fill()
+    for i in range(20):
+        for i in range(18):
+            w.right(1)
+            w.forward(1)
+        w.left(90)
+        w.forward(40)
+        w.left(180)
+        w.forward(40)
+        w.left(90)
+
 update()
