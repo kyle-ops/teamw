@@ -364,8 +364,79 @@ def DrawRect(topLeftX, topLeftY, width, height, color):
     for i in range(3):
         w.forward(2)
         w.left(5)
+  
+def makeBirf():
+    #byKyle
+    w.penup()
+    w.pendown()
+    # By Kyle
+    w.left(90)
+    for i in range(180):
+        w.forward(.3)
+        w.right(1)
+    w.left(180)
+    for i in range(180):
+        w.forward(.3)
+        w.right(1)
+        
+        
+def makeTree():
+    #byKyle
+    C.pendown()
+    colormode(255)
+    C.pencolor()
+    C.begin_fill()
+    C.fillcolor(0, 255, 0)
+    C.forward(30)
+    C.left(90)
+    C.forward(150)
+    C.right(90)
+    C.forward(20)
+    for i in range(180):
+        C.forward(1)
+        C.left(1)
+    C.forward(0)
+    C.right(90)
+    for i in range(193):
+        C.forward(1)
+        C.left(1)
+    C.right(90)
+    for i in range(193):
+        C.forward(1)
+        C.left(1)
+    C.forward(20)
+    C.right(114)
+    C.forward(153)
+    C.end_fill()
+    C.begin_fill()
+    C.fillcolor(150,75,0)
+    C.backward(153)
+    C.left(83)
+    C.forward(38)
+    C.right(84)
+    C.forward(150)
+    C.right(90)
+    C.forward(30)
+    C.end_fill()
     
-    
+def makeBarn():
+    #byKyle
+    w.left(180)
+    w.pendown()
+    w.begin_fill()
+    w.fillcolor(165,42,42)
+    w.left(90)
+    w.forward(80)
+    w.right(90)
+    w.forward(100)
+    w.right(90)
+    w.forward(80)
+    w.right(50)
+    w.forward(65)
+    w.right(80)
+    w.forward(70)
+    w.right(140)
+    w.end_fill()
 
   
 update()
