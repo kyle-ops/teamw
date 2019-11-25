@@ -364,7 +364,8 @@ def DrawRect(topLeftX, topLeftY, width, height, color):
     for i in range(3):
         w.forward(2)
         w.left(5)
-    
+   
+#sprint2
 def fish():
   #by megan
   me.pencolor("black")
@@ -391,6 +392,13 @@ def fish():
     me.right(1.5)
   me.forward(5)
   me.end_fill()
+
+def isValidNumber(myNumber):
+  #by megan
+  if myNumber==1 or myNumber==2 or myNumber==3:
+    return True
+  else:
+    return False
     
 
   
