@@ -365,6 +365,32 @@ def DrawRect(topLeftX, topLeftY, width, height, color):
         w.forward(2)
         w.left(5)
     
+def fish():
+  #by megan
+  me.pencolor("black")
+  me.fillcolor("orange")
+  me.penup()
+  me.goto(randint(-400,400), randint(-200,300))
+  me.pendown()
+  me.begin_fill()
+  me.setheading(90)
+  fishTailSize = random()*30+20 
+  fishBodySize = random()*3+1   
+  for i in range(5):
+     me.forward(fishTailSize)
+     me.right(120)
+  me.end_fill()
+  me.right(172)
+  me.begin_fill()
+  for i in range(60):
+    me.forward(fishBodySize)
+    me.right(1.4)
+  me.right(90)
+  for i in range(60):
+    me.forward(fishBodySize)
+    me.right(1.5)
+  me.forward(5)
+  me.end_fill()
     
 
   
